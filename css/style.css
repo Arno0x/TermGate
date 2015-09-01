@@ -1,0 +1,173 @@
+.brand-title {
+	font-family: monospace;
+	color: #00FF00 !important;
+	font-size: 2em;
+	text-align: center;
+}
+
+.terminal {
+	width: 100%;
+	height: 100%;
+}
+
+.maindiv {
+	position   : absolute; 
+	top        : 50px; 
+	left       : 0; 
+	width      : 100%; 
+	height     : 100%; 
+	background : #fff; 
+    /*
+	position: absolute;
+    top: 50px; 
+    bottom: 0px;
+    width: 100%;
+    background-color: #ddd;
+    */
+}
+
+/* Required to center horizontally and vertically the main image*/
+.img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    text-align:center; /* Align center inline elements */
+    font: 0/0 a;
+}
+
+.img-container:before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.img-container img {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+/* Allow two  clickable element per dropdown row */
+.open> ul>li.hz{
+    display: inline-flex !important;
+}
+
+/* Make blinking cursor */
+.blinking-cursor {
+	font-family: monospace;
+	font-weight: normal;
+	font-size: 1em;
+	color: #00FF00;
+	-webkit-animation: 1s blink step-end infinite;
+	-moz-animation: 1s blink step-end infinite;
+	-ms-animation: 1s blink step-end infinite;
+	-o-animation: 1s blink step-end infinite;
+	animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: #222;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: #333;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: #222;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: #222;
+  }
+  50% {
+    color: #00FF00;
+  }
+}
+
+/* SHOW TOOLTIPS */
+a.tooltips {
+  position: relative;
+  display: inline;
+  color: inherit;
+  text-decoration: none;
+}
+a.tooltips span {
+  position: absolute;
+  color: #000000;
+  background: #aaa;
+  visibility: hidden;
+  border-radius: 5px;
+  padding: 3px;
+  width: 200px;
+}
+a.tooltips span:after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-bottom: 8px solid #aaa;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+a:hover.tooltips span {
+  visibility: visible;
+  opacity: 0.95;
+  top: 30px;
+  left: 50%;
+  margin-left: -100px;
+  z-index: 999;
+}
+
+/* Overlay div for Add command form */
+.overlay-div {
+	border: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	padding: 2px;
+	display: none;
+	background-color: #ffffff;
+	left:0;
+	right:0;
+	margin-left:auto;
+	margin-right: auto;
+	width: 350px;
+	height:280px;
+	z-index: 10;
+	position: absolute;
+	/*overflow: auto; */
+}
+
+.overlay-back { 
+    position   : absolute; 
+    top        : 0; 
+    left       : 0; 
+    width      : 100%; 
+    height     : 100%; 
+    background : #000; 
+    opacity    : 0.7; 
+    filter     : alpha(opacity=70); 
+    z-index    : 5;
+    display    : none;
+} 
