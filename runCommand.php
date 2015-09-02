@@ -49,6 +49,8 @@ else if (isset($_GET['commandID'])) {
 		$command = escapeshellcmd($ret['COMMAND']);
 		$isDynamic = $ret['ISDYNAMIC'];
 	}
+
+	$dbManager->close();
 }
 
 // If it's not a dynamic/interactive command simply call the command and return the result
