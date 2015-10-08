@@ -91,3 +91,6 @@ Credits
 Iwasaki Yudai for his fantastic [GoTTY project](https://github.com/yudai/gotty).
 
 If you have a feature request, bug report, feel free to contact me on my twitter page.
+
+![bitcoin](https://dl.dropboxusercontent.com/s/imckco5cg0llfla/bitcoin-icon.png?dl=0) Like this tool ? Tip me with bitcoins !
+![address](https://dl.dropboxusercontent.com/s/9bd5p45xmqz72vw/bc_tipping_address.png?dl=0)
