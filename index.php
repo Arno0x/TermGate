@@ -211,6 +211,9 @@ $(document).ready(function(){
 		
 		$('#deleteCommand').attr('data-delete-id',commandID);
 		$('#deleteCommand').prop('disabled', false);
+
+		// Change window title to the command to run
+		window.document.title = $(this).text();
 		
 		$.ajax({
 			url: "runCommand.php?commandID="+commandID,
